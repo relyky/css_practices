@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>CSS Grid - Table Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+  .headrow, 
+  .datarow {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 2fr 3fr 2fr 1fr;
+  }
+
+  .headrow > * {
+    padding: 15px 10px;
+    border: solid 1px #fff;
+  }
+  
+  .datarow > * {
+    padding: 10px;
+    border: solid 1px #fff;
+  }
+
+  .headrow {
+    color: white;
+    background: navy;
+	font-weight: bold;
+  }
+  
+  .datarow {
+    color: black;
+    background: lightgrey;
+  }
+  
+  /* stripping */
+  .datarow:nth-child(odd) {
+    background: lightgreen;
+  }
+  
+  /* hover */
+  .datarow:hover {
+    background: greenyellow;
+    opacity: 0.6; /* 半透明 */
+  }
+
+/* xs devices */
+@media (max-width: 576px) {  
+  .headrow, 
+  .datarow {
+    grid-template-columns: 0.5fr 2fr 2fr 2fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  
+  .headrow > div:nth-child(6n+1),
+  .datarow > div:nth-child(6n+1) {
+    grid-row-start: span 2;
+    order:1;
+  }
+
+  .headrow > div:nth-child(6n+2),
+  .datarow > div:nth-child(6n+2) {
+    order:2;
+  }
+
+  .headrow > div:nth-child(6n+3),
+  .datarow > div:nth-child(6n+3) {
+    order: 4;
+  }
+
+  .headrow > div:nth-child(6n+4),
+  .datarow > div:nth-child(6n+4) {
+    grid-column-start: span 2;
+    order: 3;
+  }
+
+  .headrow > div:nth-child(6n+5),
+  .datarow > div:nth-child(6n+5) {
+    order: 5;
+  }
+
+  .headrow > div:nth-child(6n+6),
+  .datarow > div:nth-child(6n+6) {
+    order: 6;
+  }      
+}
+
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h2>CSS Grid - RWD Table Example</h2>
+  <ul>
+    <li><a href="https://stackoverflow.com/questions/48108879/how-to-make-hover-state-on-row-table-with-css-grid-layout">How to make hover state on row table with CSS grid layout.</a></li>
+    <li><a href="https://stackoverflow.com/questions/44936917/table-striping-rows-in-css-grid">Table striping rows in CSS Grid.</a></li>
+  </ul>
+  <div class="grid-table">
+    <div class="headrow">
+      <div class="cell">#</div>
+      <div class="cell">Title 1</div>
+      <div class="cell">Title 2</div>
+      <div class="cell">Title 3</div>
+      <div class="cell">Title 4</div>
+      <div class="cell">Title 5</div>  
+    </div>
+  
+    <div class="datarow">
+      <div class="cell">1</div>
+      <div class="cell">Row 11</div>
+      <div class="cell">Row 12</div>
+      <div class="cell">Row 13</div>
+      <div class="cell">Row 14</div>
+      <div class="cell">Row 15</div>
+    </div>
+  
+    <div class="datarow">
+      <div class="cell">2</div>
+      <div class="cell">Row 21</div>
+      <div class="cell">Row 22</div>
+      <div class="cell">Row 23</div>
+      <div class="cell">Row 24</div>
+      <div class="cell">Row 25</div>
+    </div>
+  
+    <div class="datarow">
+      <div class="cell">3</div>
+      <div class="cell">Row 31</div>
+      <div class="cell">Row 32</div>
+      <div class="cell">Row 33</div>
+      <div class="cell">Row 34</div>
+      <div class="cell">Row 35</div>
+    </div>
+  
+    <div class="datarow">
+      <div class="cell">4</div>
+      <div class="cell">Row 41</div>
+      <div class="cell">Row 42</div>
+      <div class="cell">Row 43</div>
+      <div class="cell">Row 44</div>
+      <div class="cell">Row 45</div>
+    </div>
+    
+    <div class="datarow">
+      <div class="cell">5</div>
+      <div class="cell">Row 51</div>
+      <div class="cell">Row 52</div>
+      <div class="cell">Row 53</div>
+      <div class="cell">Row 54</div>
+      <div class="cell">Row 55</div>
+    </div>
+    
+    <div class="datarow">
+      <div class="cell">6</div>
+      <div class="cell">Row 61</div>
+      <div class="cell">Row 62</div>
+      <div class="cell">Row 63</div>
+      <div class="cell">Row 64</div>
+      <div class="cell">Row 65</div>
+    </div>
+    
+    <div class="datarow">
+      <div class="cell">7</div>
+      <div class="cell">Row 71</div>
+      <div class="cell">Row 72</div>
+      <div class="cell">Row 73</div>
+      <div class="cell">Row 74</div>
+      <div class="cell">Row 75</div>
+    </div>
+  </div>
+
+</body>
+</html>
