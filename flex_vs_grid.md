@@ -15,17 +15,3 @@ __CSS Flexbox Layout__ (之後簡稱`flex`)與 __CSS Grid Layout__ (之後簡稱
 * [The Story of CSS Grid, from Its Creators](https://alistapart.com/article/the-story-of-css-grid-from-its-creators/)   
 * [Flexbox History](https://annairish.github.io/historicizing/history)   
 * [History of CSS Grid and CSS Flexbox](https://medium.com/@BennyOgidan/history-of-css-grid-and-css-flexbox-658ae6cfe6d2)   
-
-# 教學參考
-
-[CSS GRID.](https://cssgrid.io/)
-
-
-
-
-
-
-
-# Example 1
-## 用 display:grid 取代 <table> 語法
-
