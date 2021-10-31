@@ -9,7 +9,8 @@ __CSS Flexbox Layout__ (之後簡稱`flex`)與 __CSS Grid Layout__ (之後簡稱
 `flex`大概在2018年底開始可用。`gird`的實作難度比較高大概在2020年底開始可用。應用上`grid`與`flex`可以混用、可以互相嵌套，建議一套為主一套為輔各自發揮所長。若是手機應用建議以 flex 為主；若是桌面應用建議 grid 為主。然而若是導入了現成的 **CSS Framework** 的話，就看事辦事吧。   
 
 # 歷史沿革
-`flex`與`grid`各有主要推廣的網站，不過應該都不是官網，在實務上就以__W3C__的官方文件為主也是大家都服氣的地方。
+`flex`與`grid`各有主要推廣的網站，不過應該都不是官網，在實務上就以 **W3C** 的官方文件為主也是大家都服氣的地方。
+
 * [W3C - CSS Grid Layout Module Level 1 Publication History](https://www.w3.org/standards/history/css-grid-1)   
 * [W3C - CSS Flexible Box Layout Module Level 1 Publication History](https://www.w3.org/standards/history/css-flexbox-1)   
 * [The Story of CSS Grid, from Its Creators](https://alistapart.com/article/the-story-of-css-grid-from-its-creators/)   
