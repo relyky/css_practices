@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>    
+<style>
+div {
+  display: inline-block;
+  height: 350px;
+  overflow: auto
+}
+
+table th {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+
+/* == Just general styling, not relevant :) == */
+
+table {
+  border-collapse: collapse;
+}
+
+th {
+  background-color: #1976D2;
+  color: #fff;
+}
+
+th,
+td {
+  padding: 1em .5em;
+}
+
+table tr {
+  color: #212121;
+}
+
+table tr:nth-child(odd) {
+  background-color: #BBDEFB;
+}
+</style>
+</head>
+<body>
+
+<h1>Fixed table head - CSS-only</h1>
+<p>關鍵在使用<code>position: sticky;</code>來釘住table header。<br/>參考：<a href="https://stackoverflow.com/questions/11891065/css-only-scrollable-table-with-fixed-headers" target="_blank">CSS-Only Scrollable Table with fixed headers</a></p>
+
+<div>
+    <table border="0">
+      <thead>
+        <tr>
+          <th>head1</th>
+          <th>head2</th>
+          <th>head3</th>
+          <th>head4</th>
+        </tr>
+      </thead>
+      <tr>
+        <td>row 1, cell 1</td>
+        <td>row 1, cell 2</td>
+        <td>row 1, cell 2</td>
+        <td>row 1, cell 2</td>
+      </tr>
+      <tr>
+        <td>row 2, cell 1</td>
+        <td>row 2, cell 2</td>
+        <td>row 1, cell 2</td>
+        <td>row 1, cell 2</td>
+      </tr>
+      <tr>
+        <td>row 2, cell 1</td>
+        <td>row 2, cell 2</td>
+        <td>row 1, cell 2</td>
+        <td>row 1, cell 2</td>
+      </tr>
+      <tr>
+        <td>row 2, cell 1</td>
+        <td>row 2, cell 2</td>
+        <td>row 1, cell 2</td>
+        <td>row 1, cell 2</td>
+      </tr>
+      <tr>
+        <td>row 2, cell 1</td>
+        <td>row 2, cell 2</td>
+        <td>row 1, cell 2</td>
+        <td>row 1, cell 2</td>
+      </tr>
+      <tr>
+        <td>row 1, cell 1</td>
+        <td>row 1, cell 2</td>
+        <td>row 1, cell 2</td>
+        <td>row 1, cell 2</td>
+      </tr>
+      <tr>
+        <td>row 2, cell 1</td>
+        <td>row 2, cell 2</td>
+        <td>row 1, cell 2</td>
+        <td>row 1, cell 2</td>
+      </tr>
+      <tr>
+        <td>row 2, cell 1</td>
+        <td>row 2, cell 2</td>
+        <td>row 1, cell 2</td>
+        <td>row 1, cell 2</td>
+      </tr>
+      <tr>
+        <td>row 2, cell 1</td>
+        <td>row 2, cell 2</td>
+        <td>row 1, cell 2</td>
+        <td>row 1, cell 2</td>
+      </tr>
+      <tr>
+        <td>row 2, cell 1</td>
+        <td>row 2, cell 2</td>
+        <td>row 1, cell 2</td>
+        <td>row 1, cell 2</td>
+      </tr><tr>
+        <td>row 1, cell 1</td>
+        <td>row 1, cell 2</td>
+        <td>row 1, cell 2</td>
+        <td>row 1, cell 2</td>
+      </tr>
+      <tr>
+        <td>row 2, cell 1</td>
+        <td>row 2, cell 2</td>
+        <td>row 1, cell 2</td>
+        <td>row 1, cell 2</td>
+      </tr>
+      <tr>
+        <td>row 2, cell 1</td>
+        <td>row 2, cell 2</td>
+        <td>row 1, cell 2</td>
+        <td>row 1, cell 2</td>
+      </tr>
+      <tr>
+        <td>row 2, cell 1</td>
+        <td>row 2, cell 2</td>
+        <td>row 1, cell 2</td>
+        <td>row 1, cell 2</td>
+      </tr>
+      <tr>
+        <td>row 2, cell 1</td>
+        <td>row 2, cell 2</td>
+        <td>row 1, cell 2</td>
+        <td>row 1, cell 2</td>
+      </tr><tr>
+        <td>row 1, cell 1</td>
+        <td>row 1, cell 2</td>
+        <td>row 1, cell 2</td>
+        <td>row 1, cell 2</td>
+      </tr>
+      <tr>
+        <td>row 2, cell 1</td>
+        <td>row 2, cell 2</td>
+        <td>row 1, cell 2</td>
+        <td>row 1, cell 2</td>
+      </tr>
+      <tr>
+        <td>row 2, cell 1</td>
+        <td>row 2, cell 2</td>
+        <td>row 1, cell 2</td>
+        <td>row 1, cell 2</td>
+      </tr>
+      <tr>
+        <td>row 2, cell 1</td>
+        <td>row 2, cell 2</td>
+        <td>row 1, cell 2</td>
+        <td>row 1, cell 2</td>
+      </tr>
+      <tr>
+        <td>row 2, cell 1</td>
+        <td>row 2, cell 2</td>
+        <td>row 1, cell 2</td>
+        <td>row 1, cell 2</td>
+      </tr>      
+    </table>
+  </div>
+
+</body>
+</html>
+
+

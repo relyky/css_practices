@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>    
+<style>
+.tableFixHead          { overflow: auto; height: 500px; }
+.tableFixHead thead th { position: sticky; top: 0; z-index: 1; }
+
+/* Just common table stuff. Really. */
+table  { border-collapse: collapse; width: 100%; }
+th, td { padding: 8px 16px; }
+th     { background:#eee; }
+</style>
+</head>
+<body>
+
+<h1>Fixed table head - CSS-only</h1>
+<p>關鍵在使用<code>position: sticky;</code>來釘住table header。<br/>參考：<a href="https://stackoverflow.com/questions/21168521/table-fixed-header-and-scrollable-body" target="_blank">Table fixed header and scrollable body</a></p>
+
+<div class="tableFixHead">
+<table>
+  <thead>
+    <tr><th>TH 1</th><th>TH 2</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>A1</td><td>A2</td></tr>
+    <tr><td>B1</td><td>B2</td></tr>
+    <tr><td>C1</td><td>C2</td></tr>
+    <tr><td>D1</td><td>D2</td></tr>
+    <tr><td>E1</td><td>E2</td></tr>
+    <tr><td>A1</td><td>A2</td></tr>
+    <tr><td>B1</td><td>B2</td></tr>
+    <tr><td>C1</td><td>C2</td></tr>
+    <tr><td>D1</td><td>D2</td></tr>
+    <tr><td>E1</td><td>E2</td></tr>
+    <tr><td>A1</td><td>A2</td></tr>
+    <tr><td>B1</td><td>B2</td></tr>
+    <tr><td>C1</td><td>C2</td></tr>
+    <tr><td>D1</td><td>D2</td></tr>
+    <tr><td>E1</td><td>E2</td></tr>
+    <tr><td>A1</td><td>A2</td></tr>
+    <tr><td>B1</td><td>B2</td></tr>
+    <tr><td>C1</td><td>C2</td></tr>
+    <tr><td>D1</td><td>D2</td></tr>
+    <tr><td>E1</td><td>E2</td></tr>
+    <tr><td>A1</td><td>A2</td></tr>
+    <tr><td>B1</td><td>B2</td></tr>
+    <tr><td>C1</td><td>C2</td></tr>
+    <tr><td>D1</td><td>D2</td></tr>
+    <tr><td>E1</td><td>E2</td></tr>
+  </tbody>
+</table>
+</div>
+
+</body>
+</html>
+
+
