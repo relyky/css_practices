@@ -14,9 +14,10 @@ body {
   background-color: #3E606F;
   font-family: Roboto;
   overflow: hidden;
-  
-  &:before,
-  &:after {
+}
+
+  body:before,
+  body:after {
     content: "";
     position: absolute;
     left: 50%;
@@ -28,19 +29,19 @@ body {
     animation-timing-function: linear;
   }
   
-  &:before {
+  body:before {
     bottom: 15vh;
     border-radius: 45%;
     animation-duration: 10s;
   }
   
-  &:after {
+  body:after {
     bottom: 12vh;
     opacity: .5;
     border-radius: 47%;
     animation-duration: 10s;
   }
-}
+
 
 @keyframes rotate {
   0% {transform: translate(-50%, 0) rotateZ(0deg);}
@@ -76,8 +77,9 @@ h2 {
 </head>
 <body>
 
-<h1>RAY KUO</h1>
+<h1>RAY KUO 玄妙</h1>
 <h2>UX Designer / Front-end Developer</h2>
+<h2>就是這麼簡單。</h2>
 
 </body>
 </html>
