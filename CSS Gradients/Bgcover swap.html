@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    body.bgcover {
+        background-image: url(../images/bgcover-1.jpg);
+        background-size: cover;
+        animation: bgcover 20s infinite;
+        /* animation-timing-function: ease-in; */
+        animation-timing-function: cubic-bezier(0, 0.1, 0.5, 1);
+        -webkit-backface-visibility: visible; /* visible hidden Safari */
+        backface-visibility: visible;
+    }
+
+    @keyframes bgcover {
+        50% {
+            background-image: url(../images/bgcover-2.jpg);
+        }
+        100% {
+            background-image: url(../images/bgcover-1.jpg);
+        }
+    }
+</style>
+</head>
+<body class="bgcover">
+    <h1>背景圖片動態置換</h1>
+</body>
+</html>
