@@ -13,6 +13,10 @@
 * [A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
 * [CSS GRID.](https://cssgrid.io/) --- 列舉25種 grid 應用方式
 
+### CSS Animated Backgrounds
+* [33 Animated Backgrounds Examples [With Pure CSS]](https://alvarotrigo.com/blog/animated-backgrounds-css/)
+* [10+ CSS Wave Animation Examples](https://csshint.com/css-wave-animation/)
+
 # Sample
 ### Example: 用`CSS Grid`取代`<table>`語法
 若只是設計靜態表格，用傳統的`<table><tr><td>...` 的語法仍可以滿足。   
