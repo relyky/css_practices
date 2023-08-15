@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  margin:0;
+}
+
+.bg {
+  width: 100%;
+  height: 100vh;
+  background-size: 300% 300%;
+  background-image: linear-gradient(-45deg, yellow 0%, yellow 25%, yellow 51%, #ff357f 100%);
+  -webkit-animation: AnimateBG 12s ease infinite;
+          animation: AnimateBG 12s ease infinite;
+}
+
+@-webkit-keyframes AnimateBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes AnimateBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.flex-container {
+  /* We first create a flex layout context */
+  display: flex;
+  
+  /* Then we define the flow direction 
+     and if we allow the items to wrap 
+   * Remember this is the same as:
+   * flex-direction: row;
+   * flex-wrap: wrap;
+   */
+  flex-flow: row wrap;
+  
+  /* Then we define how is distributed the remaining space */
+  justify-content: center;
+  align-content:center;
+  align-items: start;
+  gap: 10px 10px;
+  
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.flex-item {
+  background: tomato;
+  padding: 5px;
+  width: 200px;
+  height: 150px;
+  /* margin-top: 10px; */
+  /* line-height: 150px; */
+  color: white;
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
+}
+
+</style>
+</head>
+<body>
+
+<div class="flex-container bg">
+  <div class="flex-item">項目１</div>
+  <div class="flex-item">項目２</div>
+  <div class="flex-item">項目３</div>
+  <div class="flex-item">項目４</div>
+  <div class="flex-item">項目５</div>
+  <div class="flex-item">項目６</div>
+  <div class="flex-item">項目７</div>
+  <div class="flex-item">項目８</div>
+  <div class="flex-item">項目９</div>
+</div>
+
+</body>
+</html>
+
+
