@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Canvas Based Image Viewer Example</title>
+  <style type="text/css">
+    html,* { font-family: 'Inter'; }
+    body { background-color: #fafafa; line-height:1.2;}
+    .lead { font-size: 1.5rem; font-weight: 300; }
+    .container { margin: 10px auto; max-width: 960px; }
+    .btn { padding: 1.25rem; border: 0; border-radius: 3px; background-color: #4F46E5; color: #fff; cursor: pointer; }
+    .opt {
+      height: 34px;
+      line-height: 34px;
+      text-align: center;
+      /* width: 600px; */
+      margin-top: 8px;
+    }
+
+    .opt ul {
+      padding: 0px;
+      margin: 0px;
+    }
+
+    .opt ul li {
+      list-style: none;
+      display: inline-block;
+      padding: 0 10px;
+      border: 1px solid #4F46E5;
+      border-radius: 5px;
+      height: 34px;
+      margin: 5px 3px;
+      border-radius: 5px;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    #canvas {
+      display:flex; 
+      margin:auto; 
+      border: 1px solid darkgrey;
+    }
+  </style>
+  <script src="viewer.1.0.0.js" type="text/javascript" charset="utf-8"></script>
+</head>
+
+<body onload="start()">
+
+  <div class="container">
+    <h1>Canvas Based Image Viewer Example</h1>
+    <p class="lead">A minimal image viewer that enables the user to zoom, pan, flip and rotate an image on an HTML5 canvas.</p>
+    <p>參考自：<a href="https://www.cssscript.com/canvas-image-viewer/">Canvas Based Image Viewer In JavaScript</a></p>
+
+    <canvas id='canvas' width='800' height='600' style=""></canvas>
+    <img id="img" src="../images/bgcover-1.jpg" style="display: none">
+
+    <div class="opt">
+      <ul>
+        <li onclick="view.scale(1.5)">Zoom In</li>
+        <li onclick="view.scale(0.5)">Zoom Out</li>
+        <li onclick="view.setOriginalSize()">1:1</li>
+        <li onclick="view.hRevert()">Horizontal Flip</li>
+        <li onclick="view.vRevert()">Vertical Flip</li>
+        <li onclick="view.rotate(Math.PI/4)">Rotate Right</li>
+        <li onclick="view.rotate(-Math.PI/4)">Rotate Left</li>
+        <li onclick="initDraw()">Reset</li>
+      </ul>
+    </div>
+  </div>
+</body>
+<script>
+  let view
+  let canvas
+
+  function initDraw() {
+    view.init()
+    view.draw()
+  }
+
+  function start() {
+    canvas = document.getElementById('canvas')
+    let img = document.getElementById("img");
+    view = new Viewer(canvas, img)
+    view.draw()
+  }
+</script>
+</html>
