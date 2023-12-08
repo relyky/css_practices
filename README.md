@@ -16,6 +16,7 @@
 ### CSS Animated Backgrounds
 * [33 Animated Backgrounds Examples [With Pure CSS]](https://alvarotrigo.com/blog/animated-backgrounds-css/)
 * [10+ CSS Wave Animation Examples](https://csshint.com/css-wave-animation/)
+* [The Best-Looking CSS Animated Background Examples](https://www.sliderrevolution.com/resources/css-animated-background/)
 
 # Sample
 ### Example: 用`CSS Grid`取代`<table>`語法
